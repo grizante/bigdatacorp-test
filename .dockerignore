@@ -1,0 +1,15 @@
+# The build needs the Go sources and sample_clubes.jsonl — pipeline_test.go
+# reads that fixture, and the tests run inside the builder stage. Do not add it
+# here. Everything below is noise the binary does not depend on.
+
+.git
+.gitignore
+Dockerfile
+.dockerignore
+
+# Program output. Regenerated on every run, and must never reach a layer.
+clubs.csv
+players.csv
+
+# Docs do not affect the binary.
+*.md
